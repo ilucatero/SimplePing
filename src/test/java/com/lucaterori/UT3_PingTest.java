@@ -55,6 +55,8 @@ public final class UT3_PingTest {
             String host = "jasmin.com";
             Report rep = new Report(host);
 
+            System.out.println("------------------SERVER:"+ ml.sendReport(config.getReportUrlServer(), rep));
+
             assert ml.sendReport(config.getReportUrlServer(), rep) == HttpURLConnection.HTTP_OK;
 
         }catch(Exception e){

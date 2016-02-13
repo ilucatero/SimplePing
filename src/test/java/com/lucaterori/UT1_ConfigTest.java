@@ -14,7 +14,7 @@ public final class UT1_ConfigTest {
     List<String> hosts;
 
     public UT1_ConfigTest(){
-        args = "-n 5 -hf .\\src\\test\\hostList.txt -log log.log -d 10000 -w 5000 -r http:\\\\localhost:8080\\myPostService".split(" ");
+        args = "-n 5 -hf .\\src\\test\\hostList.txt -log log.log -d 10000 -w 5000 -r http:\\\\httpbin.org\\post".split(" ");
         config = new Config(args);
     }
 
@@ -47,9 +47,10 @@ public final class UT1_ConfigTest {
         System.out.println("3:test3ParamsListMethod");
 
         hosts = Files.readAllLines(Paths.get(config.getHosts_File()));
+
         hosts.stream().forEach(host -> {
             assert config.asParamList(Config.PingType.ICMP, host).size() > 0;
-            assert config.asParamList(Config.PingType.TCP_UDP, host).size() > 0;
+            assert config.asParamList(Config.PingType.TCP_UDP, host) == null;
             assert config.asParamList(Config.PingType.TR, host).size() > 0;}
 
         );

@@ -3,9 +3,7 @@ package com.lucaterori;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Wizard on 10/02/2016.
- */
+/** Created by Lucaterori on 10/02/2016. */
 public final class Config {
     enum PingType {
         TCP_UDP, ICMP, TR;

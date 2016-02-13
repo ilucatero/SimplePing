@@ -2,9 +2,20 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2016-02-11T19:16:48</date>
-  <millis>1455214608747</millis>
+  <date>2016-02-13T20:26:45</date>
+  <millis>1455391605311</millis>
   <sequence>0</sequence>
+  <logger>com.lucaterori.MainLauncher</logger>
+  <level>WARNING</level>
+  <class>com.lucaterori.MainLauncher</class>
+  <method>sendReport</method>
+  <thread>1</thread>
+  <message>{"host":"jasmin.com","icmp_ping":"null","tcp_ping":"null","trace":"null"}</message>
+</record>
+<record>
+  <date>2016-02-13T20:26:45</date>
+  <millis>1455391605878</millis>
+  <sequence>1</sequence>
   <logger>com.lucaterori.MainLauncher</logger>
   <level>WARNING</level>
   <class>com.lucaterori.MainLauncher</class>
