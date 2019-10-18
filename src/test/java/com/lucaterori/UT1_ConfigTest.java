@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 /**
- * Created by Wizard on 11/02/2016.
+ * Created by Lucaterori on 11/02/2016.
  */
 public final class UT1_ConfigTest {
     String[] args;

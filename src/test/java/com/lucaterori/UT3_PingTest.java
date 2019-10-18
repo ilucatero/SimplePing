@@ -10,7 +10,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 
 /**
- * Created by Wizard on 11/02/2016.
+ * Created by Lucaterori on 11/02/2016.
  */
 public final class UT3_PingTest {
     String[] args;
